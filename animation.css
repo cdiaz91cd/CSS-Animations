@@ -1,0 +1,141 @@
+
+body {
+    background-color: white;
+    margin: 30px;
+    margin-top: 10px;
+}
+
+.displayNone {
+    display: none;
+}
+
+  #main-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container{
+      width: 1000px;
+      height: 1000px;
+  }
+
+  #container-circle {
+    width: 1000px;
+    height: 500px;
+    border: 2px black solid;
+    background-color: pink;
+    margin: auto;
+  }
+
+#cicle {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 100%;
+    animation: slide 2s infinite;
+}
+
+#square {
+    background-color: darkcyan;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+#square:hover {
+    background-color: khaki;
+    transition: background-color .3s ease-in;
+}
+
+#box {
+    width: 300px;
+    height: 300px;
+    border: 5px black solid;
+    overflow: hidden;
+    background-color: #F2F2F2;
+}
+
+#box img {
+    transform: translate3d(0, -350px, 0);
+    transition: all .5s linear;
+}
+
+#box img:hover {
+    transform: translate3d(0, 0px , 0);
+    cursor: pointer;
+}
+
+#circle2 {
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: cornflowerblue;
+    border-radius: 100%;
+    animation: circle2Animation 4s infinite;
+    animation-timing-function: linear;
+}
+
+#circle-background {
+    width: 50%;
+    height: 290px;
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 auto;
+    transition: background-color .2s ease-out;
+}
+
+#circle3 {
+    width: 200px;
+    height: 200px;
+    background-color: #20A6FF;
+    border-radius: 50%;
+}
+
+#move {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 20%;
+    outline: none;
+  }
+  #move:hover {
+    background-color: white;
+    color: black
+  }
+  #move:active {
+    background-color: yellow;
+  }
+
+@keyframes circle2Animation {
+    0%{
+        transform: translate3d(0px, 0px, 0px);
+
+    }
+    50%{
+        transform: translate3d(450px, 0px, 0px);
+    
+    }
+    100%{
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@keyframes slide {
+    0%{
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: ease-in;
+    }
+    20%{
+        transform: translate3d(200px, 300px, 0px);
+        opacity: .2;
+        animation-timing-function: ease-out;
+    }
+    100%{
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
